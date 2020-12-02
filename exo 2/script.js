@@ -10,5 +10,5 @@ bouton.addEventListener("click",function (){
 })
 
 boutonSupp.addEventListener("click", function (){
-    liste.removeChild(liste.lastChild)
+    liste.removeChild(liste.lastChild);
 })
