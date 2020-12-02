@@ -10,7 +10,7 @@ bouton.addEventListener("click",function (){
 })
 
 boutonSupp.addEventListener("click", function (){
-    if(liste.getElementsByTagName("li").length < 0) {
+    if(liste.getElementsByTagName("li").length > 0) {
         liste.removeChild(liste.lastChild);
     }
 })
