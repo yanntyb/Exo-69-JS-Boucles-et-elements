@@ -10,7 +10,8 @@ bouton.addEventListener("click",function (){
 })
 
 boutonSupp.addEventListener("click", function (){
-    if(liste.getElementsByTagName("li").length > 0) {
-        liste.removeChild(liste.lastChild);
+    let elements = document.querySelectorAll("#liste-commissions > li");
+    if(elements.length > 0) {
+        elements[elements.length - 1].remove();
     }
 })
