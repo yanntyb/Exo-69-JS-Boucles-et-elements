@@ -5,8 +5,10 @@ let boutonSupp = document.getElementById("buttonSupp");
 
 bouton.addEventListener("click",function (){
     let nouvelItem = document.createElement("li");
-    nouvelItem.innerHTML = input.value;
-    liste.appendChild(nouvelItem);
+    if(input.value.length > 0){
+        nouvelItem.innerHTML = input.value;
+        liste.appendChild(nouvelItem);
+    }
 })
 
 boutonSupp.addEventListener("click", function (){
